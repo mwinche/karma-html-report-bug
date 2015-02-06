@@ -2,7 +2,7 @@
 
 > Module that demonstrates a [karma-coverage](https://github.com/karma-runner/karma-coverage) bug
 
-## Step to duplicate
+## Steps to duplicate
 
 After cloning this repo, from the root:
 
