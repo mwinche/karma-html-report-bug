@@ -1,3 +1,5 @@
 .idea
 coverage
+karma-coverage
 node_modules
+

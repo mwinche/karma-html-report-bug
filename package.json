@@ -16,7 +16,14 @@
   "devDependencies": {},
   "scripts": {
     "test": "karma start",
-    "install": "git clone https://github.com/karma-runner/karma-coverage.git && cd karma-coverage && git checkout 4a1d186b8a3c27cd5462cb1c369bfc705f2303c4 && npm install && npm link && cd ../"
+    
+    "install": "git clone https://github.com/karma-runner/karma-coverage.git && cd karma-coverage/ && git checkout 4a1d186b8a3c27cd5462cb1c369bfc705f2303c4 && npm install && cd ../",
+
+    "working": "karma start && open coverage/chrome/index.html",
+
+    "prebug": "cd karma-coverage && npm link && cd ../ && npm link karma-coverage",
+    "bug": "karma start && open coverage/chrome/index.html",
+    "postbug": "npm unlink karma-coverage && npm install karma-coverage && cd karma-coverage/ && npm unlink && cd ../"
   },
   "private": true,
   "author": "Matt Winchester",
