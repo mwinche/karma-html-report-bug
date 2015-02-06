@@ -1,0 +1,24 @@
+{
+  "name": "karma-html-report-bug",
+  "version": "0.0.0",
+  "description": "Sample module to illustrate a bug in karma-coverage",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "jasmine-core": "2.2.0",
+    "karma": "0.12.31",
+    "karma-chrome-launcher": "0.1.7",
+    "karma-coverage": "0.2.7",
+    "karma-jasmine": "0.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "karma start",
+    "install": "git clone https://github.com/karma-runner/karma-coverage.git && cd karma-coverage && git checkout 4a1d186b8a3c27cd5462cb1c369bfc705f2303c4 && npm install && npm link && cd ../"
+  },
+  "private": true,
+  "author": "Matt Winchester",
+  "license": "MIT"
+}
